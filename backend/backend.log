@@ -1,0 +1,5 @@
+INFO:     127.0.0.1:61281 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61282 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61166 - "POST /upload HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61166 - "GET /extract?report_id=71a0f56c8de44265b93024fd9884d7ed HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57556 - "GET /download?report_id=71a0f56c8de44265b93024fd9884d7ed HTTP/1.1" 200 OK
