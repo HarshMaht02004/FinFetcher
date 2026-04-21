@@ -13,3 +13,4 @@ build/
 backend/storage/reports/
 frontend/.vite/
 backend/.env
+echo "backend/.env" >> .gitignore
