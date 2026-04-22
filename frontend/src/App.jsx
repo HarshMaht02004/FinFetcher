@@ -4,6 +4,20 @@ import StatementTable from "./components/StatementTable";
 import UploadPanel from "./components/UploadPanel";
 import { downloadReport, fetchExtraction, queryReport, uploadReport } from "./lib/api";
 
+const API_URL = import.meta.env.VITE_API_URL;
+
+async function uploadFile(file) {
+  const formData = new FormData();
+  formData.append("file", file);
+
+  const res = await fetch(`${API_URL}/upload`, {
+    method: "POST",
+    body: formData,
+  });
+
+  return await res.json();
+}
+
 const statementLabels = {
   balance_sheet: "Balance Sheet",
   profit_and_loss: "Profit & Loss Statement",
